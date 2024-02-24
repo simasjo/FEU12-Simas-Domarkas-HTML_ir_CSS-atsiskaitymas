@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 15px;
+    
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+}
+header>div>div{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    >li>a{
+        text-decoration: none;
+        color: rgb(113, 111, 111);
+    }
+    
+}
+
+.menu-icon {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #5d5d5d;
+}
+
+.spalva{
+    color: rgb(223, 49, 49);
+    font-weight: bold;
+}
+.pirmas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-left: 50px;
+    
+    max-width: auto;
+    height: auto;
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    >img{
+      width: 100%;
+    height: auto;
+    max-width: 25%;
+    filter: drop-shadow(50px -34px 86px #ff3898a7) drop-shadow(-56px 53px 90px #ff92399b); 
+    /*border-radius: 200px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);*/
+    
+    }
+    >div>p{
+        color: rgb(96, 96, 96);
+    }
+    >div>h1{
+        font-size: 5vw;
+    }
+
+    >div>li{
+        display: flex;
+        >a>button{
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            background-color: white;
+            border-color: rgb(255, 111, 15);
+        }
+    }
+}
+
+.antras{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    background: linear-gradient(45deg, #ff0000, #ff9900,  #33cc33);
+}
+.trecias{
+    margin-top: 100px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+.paryskinti{
+    text-decoration: underline;
+}
+.apsukti{
+    display: flex;
+    gap: 10px;
+    >p{
+        margin-top: 0px;
+    }
+}
+.ketvirtas{
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    >p{
+        color: rgb(96, 96, 96);
+        padding-bottom: 50px;
+    }
+    >div>div>div{
+        display: flex;
+        justify-content: space-around;
+    }
+    >div{
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.ketvirtas {
+    min-height: 65vh; /* Užpildo visą ekrano aukštį */
+    position: relative;
+}
+
+.ketvirtas::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px; /* Pabraukimo aukštis */
+    bottom: 0;
+    background-color: #cfcdcd; /* Pabraukimo spalva */
+}
+
+.section {
+    width: 100%;
+    height: 460px; /* 100% vaizdo aukštis */
+    background-color:white; /* Pasirinkta foninė spalva */
+    position: relative;
+    overflow-y: scroll;
+}
+
+.scrollbar {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 50px;
+    background-color: #333; /* Slankiklio spalva */
+    border-radius: 5px; /* Apvalūs kraštai */
+    cursor: pointer;
+    display: none;
+}
+
+.scrollbar::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #666; /* Slankiklio "rankenos" spalva */
+    border-radius: 50%; /* Apvalūs kraštai */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section:hover .scrollbar {
+    display: block;
+}
+
+
+.kortele{
+    
+    height: 430px;
+    width: 290px;
+    border-radius: 17px;
+    background-color: rgb(229, 228, 228);
+    
+}
+
+.kortsrift1{
+    color: rgb(223, 49, 49);
+    font-size: 13px;
+}
+.kortsrift2{
+    font-size: 22px;
+}
+.kortsrift3{
+    font-size: 20px;
+    color: rgb(96, 96, 96);
+    
+}
+.kortsrift4{
+    color: rgb(96, 96, 96);
+    font-size: 13px;
+}
+.kortsrift5{
+    font-size: 22px;
+}
+.kortsrift6{
+    color: rgb(96, 96, 96);
+    font-size: 20px;
+}
+.sumazinti{
+    height: 30px;
+    width: 20px;
+}
+.penktas{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    
+    >div>p{
+        color: rgb(96, 96, 96);
+    }
+    >div>h1{
+        font-size: 40px;
+    }
+    >div>li{
+        display: flex;
+        a>button{
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            background-color: white;
+            border-color: rgb(255, 111, 15);
+        }  
+    }
+}
+.penktas {
+    min-height: 40vh; /* Užpildo visą ekrano aukštį */
+    position: relative;
+}
+
+.penktas::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px; /* Pabraukimo aukštis */
+    bottom: 0;
+    background-color: #cfcdcd; /* Pabraukimo spalva */
+}
+footer{
+    margin-top: 100px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        >div>div>p{
+            color: rgb(96, 96, 96);
+        }
+        >div>p{
+            color: rgb(96, 96, 96);
+        }
+        >p{
+            color: rgb(96, 96, 96);
+        }
+    }
+    
+
+}
+.nujaupaskutinis{
+    padding-bottom: 50px;
+}
+.pabaiga{
+    padding-top: 50px;
+}
+.apacia{
+    
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 899px){
+
+    .nerodomas{
+    display: none;
+    }  
+
+}
+
+
+@media (min-width:900px){
+    
+    
+    .menu-icon{
+        display: none;
+    }
+    footer>div{
+        display: flex;
+        flex-direction: row;
+    }
+    .antras{
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 10px;
+    }
+}
